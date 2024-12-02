@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.card.hidden {
+    background-color: #95a5a6;
+    color: transparent;
+}
+
+.card.matched {
+    background-color: #2ecc71;
+    cursor: not-allowed;
+}
+
+#win-message {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+#win-message.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
